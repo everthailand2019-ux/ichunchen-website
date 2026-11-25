@@ -197,6 +197,21 @@ html[data-lang="en"] .sec-kicker { display: none; } /* English interface: no sec
 .tl-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
 .tl-item .ctx { color: var(--muted); font-size: 14px; margin-top: 4px; }
 
+/* ---------- blog ---------- */
+.blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.blog-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 26px; transition: border-color .15s, box-shadow .15s; }
+.blog-card:hover { border-color: color-mix(in srgb, var(--gold) 50%, var(--line)); box-shadow: 0 4px 20px -6px rgba(31,41,55,.08); }
+.blog-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.blog-cat { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.blog-cat.pub { color: var(--pine); background: color-mix(in srgb, var(--pine) 8%, transparent); border: 1px solid color-mix(in srgb, var(--pine) 20%, transparent); }
+.blog-cat.conf { color: #6D28D9; background: color-mix(in srgb, #6D28D9 8%, transparent); border: 1px solid color-mix(in srgb, #6D28D9 20%, transparent); }
+.blog-cat.award { color: var(--gold-ink); background: color-mix(in srgb, var(--gold) 10%, transparent); border: 1px solid color-mix(in srgb, var(--gold) 25%, transparent); }
+.blog-cat.career { color: #0369A1; background: color-mix(in srgb, #0369A1 8%, transparent); border: 1px solid color-mix(in srgb, #0369A1 20%, transparent); }
+.blog-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.08rem; line-height: 1.38; margin: 0 0 8px; }
+.blog-card p { color: var(--muted); margin: 0; font-size: 14.5px; line-height: 1.65; }
+.blog-more { display: inline-flex; align-items: center; gap: 4px; color: var(--pine); font-size: 13.5px; font-weight: 500; text-decoration: none; margin-top: 14px; }
+.blog-more:hover { color: var(--gold-ink); }
+
 /* ---------- regions ---------- */
 .regions { display: flex; flex-wrap: wrap; gap: 10px 12px; }
 .region { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; color: var(--ink); }
@@ -216,7 +231,7 @@ footer .email { color: var(--gold-ink); font-weight: 600; user-select: all; }
 footer .colophon { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; }
 
 @media (max-width: 760px){
-  .rgrid, .pillars, .svc { grid-template-columns: 1fr; }
+  .rgrid, .pillars, .svc, .blog-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr; }
   .pub { grid-template-columns: 1fr; gap: 4px; }
   .pub .meta { white-space: normal; }
