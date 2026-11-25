@@ -146,6 +146,10 @@ html[data-lang="en"] .sec-kicker { display: none; } /* English interface: no sec
 .pub .t { font-size: 16.5px; color: var(--ink); font-weight: 500; line-height: 1.5; }
 .pub .meta { color: var(--muted); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .pub .meta em { color: var(--pine); font-style: normal; font-weight: 500; }
+.pub .doi { display: inline-flex; align-items: center; gap: 2px; color: var(--gold-ink); font-weight: 600; font-size: 12.5px; letter-spacing: 0.03em; text-decoration: none; border: 1px solid var(--gold); border-radius: 999px; padding: 1px 9px; margin-left: 4px; white-space: nowrap; transition: background .15s, color .15s; }
+.pub .doi:hover { background: var(--gold); color: #fff; }
+.pub-group-title { font-family: var(--han); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold-ink); margin: 36px 0 10px; padding-bottom: 8px; border-bottom: 1.5px solid var(--line); }
+.pub-group-title:first-of-type { margin-top: 0; }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
 .stat { text-align: center; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 14px; }
 .stat .n { font-family: var(--display); font-weight: 600; font-size: clamp(2rem, 5vw, 2.7rem); color: var(--ink); line-height: 1; }
@@ -170,6 +174,10 @@ html[data-lang="en"] .sec-kicker { display: none; } /* English interface: no sec
 .svc-col li b { font-weight: 600; }
 
 /* ---------- lab ---------- */
+.framework-fig { margin: 32px 0 0; }
+.framework-img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 4px 24px -8px rgba(31,41,55,.12); }
+.framework-fig figcaption { text-align: center; color: var(--muted); font-size: 13px; margin-top: 10px; letter-spacing: 0.03em; }
+
 .lab { position: relative; overflow: hidden; background: linear-gradient(170deg, var(--panel), var(--surface) 72%); border: 1px solid var(--line); border-radius: 20px; padding: clamp(30px, 5vw, 52px); }
 .lab .iso2 { position: absolute; right: -30px; top: -26px; width: 460px; height: 250px; pointer-events: none; opacity: .55; }
 .lab > *:not(.iso2) { position: relative; }
