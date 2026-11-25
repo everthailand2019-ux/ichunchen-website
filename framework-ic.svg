@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 490" font-family="Inter, 'Noto Sans TC', system-ui, -apple-system, sans-serif">
+  <title>Climate–Care Nexus Research Architecture</title>
+  <desc>I-Chun Chen's research framework: instruments (CVCVI, ICE, CCNI, C-FLAG), four research domains, evidence base, cross-cutting themes, and policy translation across Asia and Europe.</desc>
+
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#1C5A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-size="16" font-weight="500" fill="#2C2C2A">Climate–Care Nexus Research Architecture</text>
+  <text x="340" y="48" text-anchor="middle" font-size="12" fill="#73726C">I-Chun Isabelle Chen, PhD · 氣候—照護交會研究架構</text>
+
+  <!-- LAYER 1: Instruments -->
+  <text x="40" y="76" font-size="12" font-weight="500" fill="#5F5E5A" letter-spacing="0.3">Instruments · 量測工具</text>
+
+  <rect x="40" y="86" width="92" height="30" rx="6" fill="#FBF0DD" stroke="#C7922F" stroke-width="0.5"/>
+  <text x="86" y="101" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#6B4A08">CVCVI</text>
+
+  <rect x="142" y="86" width="62" height="30" rx="6" fill="#FBF0DD" stroke="#C7922F" stroke-width="0.5"/>
+  <text x="173" y="101" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#6B4A08">ICE</text>
+
+  <rect x="214" y="86" width="72" height="30" rx="6" fill="#FBF0DD" stroke="#C7922F" stroke-width="0.5"/>
+  <text x="250" y="101" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#6B4A08">CCNI</text>
+
+  <rect x="296" y="86" width="90" height="30" rx="6" fill="#FBF0DD" stroke="#C7922F" stroke-width="0.5"/>
+  <text x="341" y="101" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#6B4A08">C-FLAG</text>
+
+  <rect x="396" y="86" width="244" height="30" rx="6" fill="#FBF0DD" stroke="#C7922F" stroke-width="0.5"/>
+  <text x="518" y="101" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#8B5E0A">Cross-cultural psychometrics</text>
+
+  <!-- LAYER 2: Research Domains -->
+  <text x="40" y="140" font-size="12" font-weight="500" fill="#5F5E5A" letter-spacing="0.3">Research domains · 研究領域</text>
+
+  <rect x="40" y="150" width="136" height="60" rx="8" fill="#E1F5EE" stroke="#1C5A4A" stroke-width="0.5"/>
+  <text x="108" y="173" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Measurement</text>
+  <text x="108" y="193" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">CVCVI · ICE</text>
+
+  <line x1="176" y1="180" x2="192" y2="180" stroke="#1C5A4A" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="198" y="150" width="118" height="60" rx="8" fill="#E1F5EE" stroke="#1C5A4A" stroke-width="0.5"/>
+  <text x="257" y="173" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Emotions</text>
+  <text x="257" y="193" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">ICE family</text>
+
+  <line x1="316" y1="180" x2="332" y2="180" stroke="#1C5A4A" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="338" y="150" width="136" height="60" rx="8" fill="#E1F5EE" stroke="#1C5A4A" stroke-width="0.5"/>
+  <text x="406" y="173" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Evidence</text>
+  <text x="406" y="193" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">NHIRD · HART</text>
+
+  <line x1="474" y1="180" x2="490" y2="180" stroke="#1C5A4A" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="496" y="150" width="144" height="60" rx="8" fill="#E1F5EE" stroke="#1C5A4A" stroke-width="0.5"/>
+  <text x="568" y="173" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Governance</text>
+  <text x="568" y="193" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Policy</text>
+
+  <!-- LAYER 3: Evidence Base -->
+  <text x="40" y="236" font-size="12" font-weight="500" fill="#5F5E5A" letter-spacing="0.3">Evidence base · 實證資料</text>
+
+  <rect x="40" y="246" width="140" height="30" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="110" y="261" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">Taiwan NHIRD</text>
+
+  <rect x="192" y="246" width="140" height="30" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="262" y="261" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">Thailand HART</text>
+
+  <rect x="344" y="246" width="152" height="30" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="420" y="261" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">4-city Asian PoC</text>
+
+  <rect x="508" y="246" width="132" height="30" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="574" y="261" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">368 townships</text>
+
+  <!-- LAYER 4: Cross-Cutting Themes -->
+  <text x="40" y="302" font-size="12" font-weight="500" fill="#5F5E5A" letter-spacing="0.3">Cross-cutting themes · 橫切議題</text>
+
+  <rect x="40" y="312" width="192" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="136" y="326" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">Gender equity</text>
+
+  <rect x="244" y="312" width="192" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="340" y="326" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">Digital inclusion</text>
+
+  <rect x="448" y="312" width="192" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="544" y="326" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">Disaster resilience</text>
+
+  <rect x="40" y="348" width="192" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="136" y="362" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">Community care</text>
+
+  <rect x="244" y="348" width="204" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="346" y="362" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">Faith-based networks</text>
+
+  <rect x="460" y="348" width="180" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="550" y="362" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">Social protection</text>
+
+  <!-- LAYER 5: Policy Translation Reach -->
+  <text x="40" y="404" font-size="12" font-weight="500" fill="#5F5E5A" letter-spacing="0.3">Policy translation reach · 政策轉譯範圍</text>
+
+  <rect x="40" y="414" width="600" height="30" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="340" y="429" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#712B13">Taiwan → Thailand → Japan → Germany → UK → ASEAN → Global</text>
+
+  <!-- Footer: Networks -->
+  <text x="340" y="470" text-anchor="middle" font-size="12" fill="#B4B2A9">Climate Care Lab · Inter-CARE · ILO · WHO · OECD</text>
+</svg>
