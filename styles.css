@@ -48,7 +48,7 @@ header.bar {
 }
 .bar .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 62px; gap: 14px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: 0.01em; white-space: nowrap; }
-.monogram { width: 30px; height: 30px; border-radius: 8px; flex: none; display: grid; place-items: center; background: var(--gold); color: #16110a; font-family: var(--display); font-weight: 600; font-size: 15px; }
+.monogram { width: 30px; height: 30px; border-radius: 8px; flex: none; object-fit: contain; }
 .bar-right { display: flex; align-items: center; gap: 18px; }
 nav.links { display: flex; gap: 18px; align-items: center; }
 nav.links a { color: var(--muted); text-decoration: none; font-size: 14px; letter-spacing: 0.02em; white-space: nowrap; }
