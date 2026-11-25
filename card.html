@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. I-Chun Isabelle Chen — Academic Card</title>
+<meta name="description" content="Digital academic name card for Dr. I-Chun Isabelle Chen — Climate–Care Nexus researcher, Inter-CARE Founding Convener, Climate Care Lab Director.">
+<meta property="og:title" content="Dr. I-Chun Isabelle Chen — Academic Card">
+<meta property="og:description" content="Climate–Care Nexus researcher. Founding Convener, Inter-CARE. Director, Climate Care Lab.">
+<meta property="og:image" content="https://ichunchen.org/og-card.png?v=2">
+<meta property="og:url" content="https://ichunchen.org/card.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #FAF8F3;
+  --fg: #2A2A2A;
+  --muted: #6B6B6B;
+  --line: #E4DFD5;
+  --pine: #1C5A4A;
+  --blue: #185FA5;
+  --gold: #C7922F;
+  --cream: #F5F1E8;
+  --card: #FFFFFF;
+  --panel-bg: #F0ECE3;
+  --icon-bg: rgba(28,90,74,0.08);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1A1A1E;
+    --fg: #E8E4DC;
+    --muted: #9A958C;
+    --line: #3A3832;
+    --cream: #252320;
+    --card: #242228;
+    --panel-bg: #2A2826;
+    --icon-bg: rgba(28,90,74,0.18);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1A1A1E;
+  --fg: #E8E4DC;
+  --muted: #9A958C;
+  --line: #3A3832;
+  --cream: #252320;
+  --card: #242228;
+  --panel-bg: #2A2826;
+  --icon-bg: rgba(28,90,74,0.18);
+  color-scheme: dark;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px max(16px, env(safe-area-inset-left, 0px));
+}
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: max(20px, env(safe-area-inset-left, 0px));
+  font-size: 13px;
+  color: var(--pine);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+.back-link:hover { opacity: 1; }
+.card-wrapper {
+  max-width: 960px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.top-bar {
+  height: 5px;
+  background: linear-gradient(90deg, var(--pine), var(--blue), var(--gold));
+}
+.panels {
+  display: grid;
+  grid-template-columns: 280px 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .panels { grid-template-columns: 1fr; }
+}
+.panel-left {
+  background: var(--cream);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-right: 1px solid var(--line);
+}
+@media (max-width: 768px) {
+  .panel-left { border-right: none; border-bottom: 1px solid var(--line); }
+}
+.portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 3px solid var(--gold);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--fg);
+}
+.degree {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.divider {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 1px;
+}
+.contact-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12.5px;
+}
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--muted);
+  word-break: break-all;
+}
+.contact-list .icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--icon-bg);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-list .icon svg { width: 14px; height: 14px; }
+.contact-list .label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--pine);
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+.contact-list .value {
+  color: var(--fg);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+.cta-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+.cta:hover { opacity: 0.85; }
+.cta-primary {
+  background: var(--pine);
+  color: #fff;
+}
+.cta-secondary {
+  background: transparent;
+  color: var(--pine);
+  border: 1.5px solid var(--pine);
+}
+.cta svg { width: 14px; height: 14px; flex-shrink: 0; }
+.panel-mid {
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid var(--line);
+}
+@media (max-width: 768px) {
+  .panel-mid { border-right: none; border-bottom: 1px solid var(--line); }
+}
+.panel-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--pine);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--gold);
+  display: inline-block;
+}
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.role {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.role-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.role-icon.pine { background: rgba(28,90,74,0.1); color: var(--pine); }
+.role-icon.blue { background: rgba(24,95,165,0.1); color: var(--blue); }
+.role-icon.gold { background: rgba(199,146,47,0.1); color: var(--gold); }
+.role-title { font-weight: 600; font-size: 13px; line-height: 1.3; }
+.role-org { font-size: 12px; color: var(--muted); line-height: 1.4; }
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.tag {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--panel-bg);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
+.panel-right {
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.resource {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.resource-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--panel-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resource-icon svg { width: 18px; height: 18px; }
+.resource-title { font-weight: 600; font-size: 13px; line-height: 1.3; }
+.resource-desc { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+.bottom-bar {
+  background: var(--pine);
+  color: rgba(255,255,255,0.9);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .bottom-bar { flex-direction: column; gap: 4px; text-align: center; }
+}
+.bottom-bar .url { font-weight: 600; letter-spacing: 0.5px; }
+.bottom-bar .tagline { opacity: 0.75; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<a class="back-link" href="/">&larr; ichunchen.org</a>
+
+<div class="card-wrapper">
+  <div class="top-bar"></div>
+  <div class="panels">
+    <div class="panel-left">
+      <img class="portrait" src="portrait.jpg" alt="Dr. I-Chun Isabelle Chen at Widener Library, Harvard University" width="300" height="300">
+      <div class="name">I-Chun Isabelle<br>Chen</div>
+      <div class="degree">PhD &middot; Public Health &amp; Gerontology</div>
+      <div class="divider"></div>
+      <ul class="contact-list">
+        <li>
+          <span class="icon"><svg fill="none" stroke="var(--pine)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span>
+          <div>
+            <div class="label">Email</div>
+            <div class="value">smartechagingsolutions@gmail.com</div>
+          </div>
+        </li>
+        <li>
+          <span class="icon"><svg fill="var(--pine)" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8.3 7.4a1 1 0 110 2 1 1 0 010-2zm-.9 3.2h1.8v7H7.4v-7zm3.3 0h3.3c2.4 0 3.9 1.6 3.9 3.5s-1.5 3.5-3.9 3.5h-3.3v-7zm1.8 1.6v3.8h1.4c1.3 0 2.2-.8 2.2-1.9s-.9-1.9-2.2-1.9h-1.4z"/></svg></span>
+          <div>
+            <div class="label">ORCID</div>
+            <div class="value">0000-0002-6445-9502</div>
+          </div>
+        </li>
+        <li>
+          <span class="icon"><svg fill="none" stroke="var(--pine)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg></span>
+          <div>
+            <div class="label">Website</div>
+            <div class="value">ichunchen.org</div>
+          </div>
+        </li>
+      </ul>
+      <div class="cta-buttons">
+        <a class="cta cta-primary" href="mailto:smartechagingsolutions@gmail.com">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Send Email
+        </a>
+        <a class="cta cta-secondary" href="https://ichunchen.org" target="_blank">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
+          Visit Website
+        </a>
+      </div>
+    </div>
+
+    <div class="panel-mid">
+      <div class="panel-title">Current Positions</div>
+      <div class="role-list">
+        <div class="role">
+          <div class="role-icon pine"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.08 12.08 0 0121 17.5c0 1.38-4.03 2.5-9 2.5S3 18.88 3 17.5c0-2.51.94-4.8 2.84-6.922L12 14z"/></svg></div>
+          <div>
+            <div class="role-title">Postdoctoral Fellow</div>
+            <div class="role-org">Chulalongkorn University, Bangkok</div>
+          </div>
+        </div>
+        <div class="role">
+          <div class="role-icon blue"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.08 12.08 0 0121 17.5c0 1.38-4.03 2.5-9 2.5S3 18.88 3 17.5c0-2.51.94-4.8 2.84-6.922L12 14z"/></svg></div>
+          <div>
+            <div class="role-title">Visiting Fellow</div>
+            <div class="role-org">University of West London</div>
+          </div>
+        </div>
+        <div class="role">
+          <div class="role-icon gold"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div>
+            <div class="role-title">Founding Convener</div>
+            <div class="role-org">Inter-CARE Network</div>
+          </div>
+        </div>
+        <div class="role">
+          <div class="role-icon pine"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+          <div>
+            <div class="role-title">Director</div>
+            <div class="role-org">Climate Care Lab</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-title" style="margin-top:4px">Research Focus</div>
+      <div class="research-tags">
+        <span class="tag">Climate &amp; Ageing</span>
+        <span class="tag">Long-term Care</span>
+        <span class="tag">Health Policy</span>
+        <span class="tag">East Asia</span>
+        <span class="tag">Southeast Asia</span>
+        <span class="tag">CCNI Index</span>
+      </div>
+    </div>
+
+    <div class="panel-right">
+      <div class="panel-title">Research Resources</div>
+      <div class="resource-list">
+        <div class="resource">
+          <a href="https://scholar.google.com.tw/citations?user=fRHrg7IAAAAJ" target="_blank" rel="noopener" style="display:contents;text-decoration:none;color:inherit">
+          <div class="resource-icon"><svg fill="none" stroke="var(--pine)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+          <div>
+            <div class="resource-title">Publications</div>
+            <div class="resource-desc">Peer-reviewed articles on climate-care nexus, ageing policy, and community resilience</div>
+          </div>
+          </a>
+        </div>
+        <div class="resource">
+          <a href="https://sites.google.com/view/inter-care--network/home" target="_blank" rel="noopener" style="display:contents;text-decoration:none;color:inherit">
+          <div class="resource-icon"><svg fill="none" stroke="var(--blue)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg></div>
+          <div>
+            <div class="resource-title">Climate Care Lab</div>
+            <div class="resource-desc">Research hub for climate-resilient, age-inclusive communities across Asia-Europe</div>
+          </div>
+          </a>
+        </div>
+        <div class="resource">
+          <div class="resource-icon"><svg fill="none" stroke="var(--gold)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></div>
+          <div>
+            <div class="resource-title">Talks &amp; Lectures</div>
+            <div class="resource-desc">Keynotes and invited talks on disaster governance, care policy, and healthy ageing</div>
+          </div>
+        </div>
+        <div class="resource">
+          <div class="resource-icon"><svg fill="none" stroke="var(--pine)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+          <div>
+            <div class="resource-title">CV &amp; Profile</div>
+            <div class="resource-desc">Full academic curriculum vitae, awards, grants, and professional service</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-title" style="margin-top:4px">Networks</div>
+      <div class="research-tags">
+        <a href="https://scholar.google.com.tw/citations?user=fRHrg7IAAAAJ" target="_blank" rel="noopener" style="text-decoration:none"><span class="tag">Google Scholar</span></a>
+        <a href="https://www.researchgate.net/profile/I-Chun-Chen-8" target="_blank" rel="noopener" style="text-decoration:none"><span class="tag">ResearchGate</span></a>
+        <a href="https://www.linkedin.com/in/drichunchen/" target="_blank" rel="noopener" style="text-decoration:none"><span class="tag">LinkedIn</span></a>
+        <a href="https://orcid.org/0000-0002-6445-9502" target="_blank" rel="noopener" style="text-decoration:none"><span class="tag">ORCID</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <span class="url">ichunchen.org</span>
+    <span class="tagline">Climate Care Lab &middot; Research &amp; Policy for Ageing Societies</span>
+  </div>
+</div>
+
+</body>
+</html>
