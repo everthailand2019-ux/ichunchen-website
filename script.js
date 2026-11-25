@@ -17,7 +17,7 @@
 
       "hero.eyebrow": "The Climate–Care Nexus in Ageing Societies",
       "hero.name": "I-Chun Isabelle Chen",
-      "hero.subname": "陳怡君　博士 · PhD",
+      "hero.subname": "PhD · Public Health &amp; Gerontology",
       "hero.lede": "I measure and govern care continuity for older adults under climate risk across Asia — and translate that evidence for Europe.",
       "hero.sub": "A public-health and gerontology researcher working at the intersection of climate change, healthy ageing, and long-term care across East and Southeast Asia — building the Climate–Care Nexus Index (CCNI) for age-inclusive, climate-resilient communities.",
       "hero.role1": "Postdoctoral Fellow · <b>Chulalongkorn University</b>",
@@ -103,7 +103,7 @@
       "sv.c3b": "Contributions to ASEAN regional long-term-care policy dialogue",
       "sv.c3c": "Collaboration with community and faith-based care networks, including the Tzu Chi Foundation",
 
-      "lab.kick": "An emerging research initiative", "lab.zh": "氣候照護實驗室 · 跨越亞洲與歐洲的高齡韌性研究平台",
+      "lab.kick": "An emerging research initiative", "lab.zh": "A research platform for ageing resilience across Asia and Europe",
       "lab.p": "A research platform for climate resilience, ageing and continuity of care across Asia and Europe — spanning policy diagnostics, NGO partnership models, and intergenerational community design.",
       "lab.note": "Currently a research programme in formation; not presented as an officially established NCKU laboratory before institutional approval.",
 
@@ -117,7 +117,7 @@
       "ft.h": "Let's build climate-resilient care",
       "ft.lead": "Open to collaboration across long-term-care policy, climate-emotion measurement, and age-inclusive community design in Asia and Europe. Prospective graduate students are welcome to get in touch.",
       "ft.emailLabel": "Email · ",
-      "ft.c1": "© 2026 I-Chun Isabelle Chen · 陳怡君",
+      "ft.c1": "© 2026 I-Chun Isabelle Chen",
       "ft.c2": "Climate Care Lab · Research & Policy for Ageing Societies under Climate Stress"
     },
 
