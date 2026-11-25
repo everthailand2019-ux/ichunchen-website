@@ -14,7 +14,7 @@
       "nav.lab": "Lab",
       "nav.about": "About", "nav.research": "Research", "nav.publications": "Publications",
       "nav.teaching": "Teaching", "nav.awards": "Awards", "nav.service": "Service",
-      "nav.blog": "Blog", "nav.contact": "Contact",
+      "nav.blog": "Blog", "nav.contact": "Contact", "nav.card": "Card",
 
       "hero.eyebrow": "The Climate–Care Nexus in Ageing Societies",
       "hero.name": "I-Chun Isabelle Chen",
@@ -175,7 +175,7 @@
       "nav.lab": "實驗室",
       "nav.about": "關於", "nav.research": "研究", "nav.publications": "著作",
       "nav.teaching": "教學", "nav.awards": "獎助", "nav.service": "服務",
-      "nav.blog": "動態", "nav.contact": "聯絡",
+      "nav.blog": "動態", "nav.contact": "聯絡", "nav.card": "名片",
 
       "hero.eyebrow": "高齡社會中的氣候—照護交會",
       "hero.name": "陳怡君",
