@@ -1,0 +1,270 @@
+/* =============================================================
+   Bilingual (English / 繁體中文) content + language toggle.
+   Each [data-i18n="key"] element is filled from DICT[lang][key].
+   To edit copy, change the strings below — structure stays in HTML.
+   ============================================================= */
+(function () {
+  "use strict";
+
+  var DICT = {
+    en: {
+      "doc.title": "I-Chun Chen",
+      "brand": "I-Chun Chen, PhD",
+
+      "nav.about": "About", "nav.research": "Research", "nav.publications": "Publications",
+      "nav.teaching": "Teaching", "nav.awards": "Awards", "nav.service": "Service",
+      "nav.news": "News", "nav.contact": "Contact",
+
+      "hero.eyebrow": "The Climate–Care Nexus in Ageing Societies",
+      "hero.name": "I-Chun Isabelle Chen",
+      "hero.subname": "陳怡君　博士 · PhD",
+      "hero.lede": "I measure and govern care continuity for older adults under climate risk across Asia — and translate that evidence for Europe.",
+      "hero.sub": "A public-health and gerontology researcher working at the intersection of climate change, healthy ageing, and long-term care across East and Southeast Asia — building the Climate–Care Nexus Index (CCNI) for age-inclusive, climate-resilient communities.",
+      "hero.role1": "Postdoctoral Fellow · <b>Chulalongkorn University</b>",
+      "hero.role2": "Incoming Assistant Professor · <b>NCKU</b>",
+      "hero.role3": "Visiting Fellow · <b>University of West London</b>",
+      "hero.role4": "Founding Convener · <b>ARCH Network</b>",
+      "link.email": "Email",
+
+      "about.kicker": "關於我", "about.title": "About",
+      "about.intro": "I-Chun Isabelle Chen, PhD, studies the climate–care nexus in ageing societies. She develops the CVCVI and ICE measurement instruments, builds disaster–long-term-care evidence across Asia, and translates it for European and ASEAN policy.",
+      "about.colAppt": "Appointments", "about.colEdu": "Education",
+
+      "appt.curPill": "Current · 2026–", "appt.curTitle": "Postdoctoral Fellow",
+      "appt.curOrg": "College of Population Studies", "appt.curPlace": "Chulalongkorn University · Bangkok, Thailand",
+      "appt.incPill": "Incoming · Feb 2027", "appt.incTitle": "Assistant Professor",
+      "appt.incOrg": "Institute of Gerontology, College of Medicine", "appt.incPlace": "National Cheng Kung University · Tainan, Taiwan",
+      "about.also": "Also <b>Visiting Fellow</b> at the Geller Institute of Ageing and Memory, University of West London (2025–); <b>Adjunct Assistant Professor</b> at the University of the Thai Chamber of Commerce (2024–) and Ming Chuan University (2024–). Fieldwork across Japan, Taiwan and Thailand, with policy translation for Germany and ASEAN.",
+
+      "edu1.t": "Postdoctoral research training", "edu1.s": "Harvard T.H. Chan School of Public Health — with Prof. Ichiro Kawachi",
+      "edu2.t": "PhD, Public Health", "edu2.s": "Chulalongkorn University · <span class='prize'>Very Good Dissertation Prize</span>",
+      "edu3.t": "PhD, Sport, Leisure & Hospitality Management", "edu3.s": "National Taiwan Normal University",
+      "edu4.t": "MBA, International Human Resource Management", "edu4.s": "National Taiwan Normal University",
+      "edu5.t": "MEd, Civic Education & Leadership", "edu5.s": "National Taiwan Normal University",
+      "edu6.t": "BA, German Language & Culture", "edu6.s": "Soochow University",
+
+      "bio.title": "Biography",
+      "bio.p1": "Chen studies how extreme heat and disasters sever the continuity of care for older adults, and develops cross-culturally comparable instruments and policy-evaluation frameworks. Her fieldwork spans Taiwan, Thailand, Japan, Germany and the United Kingdom, in long-term collaboration with community organisations, faith-based charity networks and long-term-care systems.",
+      "bio.p2": "She builds the CVCVI (Climate–Care Capacity and Vulnerability Index) and the ICE family of climate-emotion scales, drawing on Taiwan's National Health Insurance Research Database and four waves of Thailand's HART national ageing panel to trace how disasters interrupt long-term-care services and shape older adults' health. From February 2027 she joins the Institute of Gerontology, National Cheng Kung University.",
+
+      "lang.kicker": "語言與區域經驗", "lang.title": "Languages",
+      "lang1.n": "Mandarin Chinese", "lang1.v": "NATIVE", "lang1.u": "Taiwan fieldwork, NHIRD analysis, scale translation",
+      "lang2.n": "English", "lang2.v": "PROFESSIONAL", "lang2.u": "Publication, teaching, international networks",
+      "lang3.n": "Thai", "lang3.v": "WORKING", "lang3.u": "HART panel research, Bangkok fieldwork & teaching",
+      "lang4.n": "German", "lang4.v": "WORKING", "lang4.u": "German long-term-care policy translation",
+      "lang5.n": "Japanese", "lang5.v": "BASIC", "lang5.u": "Japan comparative long-term-care collaboration",
+
+      "ri.kicker": "研究主題", "ri.title": "Research Interests",
+      "ri.t1": "Climate–care nexus", "ri.t2": "Gerontology", "ri.t3": "Disaster resilience",
+      "ri.t4": "Long-term-care policy", "ri.t5": "Composite indicators", "ri.t6": "Cross-cultural psychometrics",
+      "pl.kicker": "研究四大主軸", "pl.title": "Four Research Pillars",
+      "pl1.n": "01 — Instruments", "pl1.h": "Measuring vulnerability", "pl1.p": "<span class='code'>CVCVI</span> — the Climate–Care Capacity and Vulnerability Index — integrates climate vulnerability, long-term-care adequacy and community resilience to OECD / JRC composite-indicator standards.",
+      "pl2.n": "02 — Climate emotions", "pl2.h": "Mind in a warming world", "pl2.p": "The <span class='code'>ICE</span> instrument family measures climate-related emotions and mental health in later life, validated across Chinese, Thai and English.",
+      "pl3.n": "03 — Longitudinal evidence", "pl3.h": "Cohorts & panels", "pl3.p": "Disaster–long-term-care cohorts linked to Taiwan's NHIRD (Typhoon Morakot, Chi-Chi earthquake), 368 townships, a four-city Asian proof-of-concept, and four waves of Thailand's HART ageing panel.",
+      "pl4.n": "04 — Governance & translation", "pl4.h": "Care as infrastructure", "pl4.p": "Community and faith-based networks — including the Tzu Chi Foundation — as resilience infrastructure, translated for German long-term-care reform and the ASEAN agenda.",
+
+      "pub.kicker": "代表著作", "pub.title": "Selected Publications",
+      "pub.intro": "Recent work spanning planetary health, gerontology, and disaster risk reduction.",
+      "stat1": "published or accepted works", "stat2": "in Q1 journals", "stat3": "manuscripts under review or revision",
+
+      "te.kicker": "教學與指導", "te.title": "Teaching & Supervision",
+      "te.intro": "Teaching across public health, gerontology and international programmes in Thailand and Taiwan — moving from measurement to policy, built on live projects students can work with directly.",
+      "te.themesH": "Course & lecture themes",
+      "te.th1": "Climate change, extreme heat & older adults' health", "te.th2": "Comparative long-term-care policy",
+      "te.th3": "Community resilience & disaster response", "te.th4": "Composite indicator construction",
+      "te.th5": "Cross-cultural scale validation", "te.th6": "Research design for cross-national ageing studies",
+      "te.supH": "Supervision", "te.supWhere": "From February 2027 · Institute of Gerontology, National Cheng Kung University",
+      "te.supP": "Welcoming master's and doctoral students interested in the climate–care nexus, long-term-care policy, disaster resilience and psychometric instrument development. Possible thesis directions:",
+      "te.b1": "Extreme heat exposure and long-term-care service interruption",
+      "te.b2": "Validating climate-emotion measures in a new language or population",
+      "te.b3": "Subnational climate–care vulnerability indices for a chosen country",
+      "te.b4": "Faith-based and community organisations as disaster care infrastructure",
+      "te.b5": "Comparative long-term-care financing under climate stress",
+      "te.note": "Prospective students are welcome to write with a CV, transcript and a short statement of research interests.",
+
+      "aw.kicker": "獎助與榮譽", "aw.title": "Grants, Fellowships & Honours",
+      "aw1.t": "Second Century Fund (C2F) Postdoctoral Fellowship", "aw1.s": "Chulalongkorn University",
+      "aw2.t": "Toyota Foundation International Grant Programme", "aw2.s": "Co-applicant with Prof. Rajib Shaw, Keio University SFC",
+      "aw3.t": "Very Good Dissertation Prize", "aw3.s": "Chulalongkorn University, PhD in Public Health",
+      "aw4.t": "Postdoctoral research training", "aw4.s": "Harvard T.H. Chan School of Public Health, with Prof. Ichiro Kawachi",
+      "aw5.t": "Overseas Research Experience Scholarship", "aw5.s": "Chulalongkorn University",
+      "aw6.t": "Government Scholarship for Overseas Study", "aw6.s": "Ministry of Education, Taiwan",
+
+      "sv.kicker": "學術服務與影響", "sv.title": "Service, Editorial & Convening",
+      "sv.c1h": "Convening & talks",
+      "sv.c1a": "<b>Founding Convener</b>, ARCH — Ageing, Resilience, Climate & Health Network",
+      "sv.c1b": "Symposium and policy-dialogue participation across ASEAN long-term-care agendas",
+      "sv.c1c": "Conference presentations on climate emotions, disaster resilience and community care",
+      "sv.c2h": "Editorial & peer review",
+      "sv.c2a": "<b>Series Editor</b>, Springer Nature — <i>International Perspectives on Aging</i>",
+      "sv.c2b": "Peer reviewer across gerontology, public health and disaster-studies journals",
+      "sv.c3h": "Policy engagement",
+      "sv.c3a": "Translation of findings for German long-term-care reform debates",
+      "sv.c3b": "Contributions to ASEAN regional long-term-care policy dialogue",
+      "sv.c3c": "Collaboration with community and faith-based care networks, including the Tzu Chi Foundation",
+
+      "lab.kick": "An emerging research initiative", "lab.zh": "氣候照護實驗室 · 跨越亞洲與歐洲的高齡韌性研究平台",
+      "lab.p": "A research platform for climate resilience, ageing and continuity of care across Asia and Europe — spanning policy diagnostics, NGO partnership models, and intergenerational community design.",
+      "lab.note": "Currently a research programme in formation; not presented as an officially established NCKU laboratory before institutional approval.",
+
+      "nw.kicker": "最新動態", "nw.title": "What's New",
+      "nw1.d": "2 Sep 2026", "nw1.p": "<b>ISEE 2026, Munich</b> — Talk on the cross-cultural adaptation and psychometric validation of the Traditional Chinese Inventory of Climate Emotions in Taiwan.", "nw1.c": "Session S24 · Bridging Knowledge, Emotion, and Culture",
+      "nw2.d": "2026", "nw2.p": "Appointed <b>Series Editor</b>, Springer Nature <i>International Perspectives on Aging</i>.",
+      "nw3.d": "2026", "nw3.p": "Awarded a <b>Toyota Foundation International Grant Programme</b>, with Prof. Rajib Shaw (Keio University, SFC).",
+      "fd.kicker": "研究場域", "fd.title": "Fields & Regions",
+      "fd.r1": "Taiwan", "fd.r2": "Thailand", "fd.r3": "Japan", "fd.r4": "Germany", "fd.r5": "United Kingdom", "fd.r6": "United States", "fd.r7": "ASEAN",
+
+      "ft.h": "Let's build climate-resilient care",
+      "ft.lead": "Open to collaboration across long-term-care policy, climate-emotion measurement, and age-inclusive community design in Asia and Europe. Prospective graduate students are welcome to get in touch.",
+      "ft.emailLabel": "Email · ",
+      "ft.c1": "© 2026 I-Chun Isabelle Chen · 陳怡君",
+      "ft.c2": "Climate Care Lab · Research & Policy for Ageing Societies under Climate Stress"
+    },
+
+    zh: {
+      "doc.title": "陳怡君",
+      "brand": "陳怡君　博士",
+
+      "nav.about": "關於", "nav.research": "研究", "nav.publications": "著作",
+      "nav.teaching": "教學", "nav.awards": "獎助", "nav.service": "服務",
+      "nav.news": "動態", "nav.contact": "聯絡",
+
+      "hero.eyebrow": "高齡社會中的氣候—照護交會",
+      "hero.name": "陳怡君",
+      "hero.subname": "I-Chun Isabelle Chen, PhD",
+      "hero.lede": "我測量並治理亞洲高齡者在氣候風險下的照護連續性，並將證據轉譯給歐洲。",
+      "hero.sub": "公共衛生與高齡研究學者，關注氣候變遷、健康老化與長期照護在東亞及東南亞的交會，並建立「氣候—照護連結指數」（CCNI），以打造全齡友善、具氣候韌性的社區。",
+      "hero.role1": "博士後研究員 · <b>朱拉隆功大學</b>",
+      "hero.role2": "候任助理教授 · <b>成功大學</b>",
+      "hero.role3": "訪問研究員 · <b>西倫敦大學</b>",
+      "hero.role4": "創會召集人 · <b>ARCH 網絡</b>",
+      "link.email": "電子郵件",
+
+      "about.kicker": "About", "about.title": "關於",
+      "about.intro": "陳怡君，公共衛生與高齡研究學者，研究主題為「氣候—照護」交會處。她發展 CVCVI 與 ICE 測量工具，建立橫跨亞洲的災害—長照證據，並將其轉譯為歐洲與東協的政策語言。",
+      "about.colAppt": "現職與聘任", "about.colEdu": "學歷",
+
+      "appt.curPill": "現職 · 2026–", "appt.curTitle": "博士後研究員",
+      "appt.curOrg": "人口研究學院", "appt.curPlace": "朱拉隆功大學 · 泰國曼谷",
+      "appt.incPill": "候任 · 2027 年 2 月", "appt.incTitle": "助理教授",
+      "appt.incOrg": "醫學院老年學研究所", "appt.incPlace": "國立成功大學 · 台灣台南",
+      "about.also": "同時擔任西倫敦大學 Geller 老化與記憶研究所 <b>訪問研究員</b>（2025–）；泰國商會大學（2024–）與銘傳大學（2024–）<b>兼任助理教授</b>。研究場域橫跨日本、台灣與泰國，並為德國與東協進行政策轉譯。",
+
+      "edu1.t": "博士後研究訓練", "edu1.s": "哈佛大學 T.H. Chan 公共衛生學院 — 指導教授 Ichiro Kawachi",
+      "edu2.t": "公共衛生博士", "edu2.s": "朱拉隆功大學 · <span class='prize'>博士論文優等獎</span>",
+      "edu3.t": "運動、休閒與餐旅管理博士", "edu3.s": "國立臺灣師範大學",
+      "edu4.t": "國際人力資源管理碩士（MBA）", "edu4.s": "國立臺灣師範大學",
+      "edu5.t": "公民教育與領導碩士（MEd）", "edu5.s": "國立臺灣師範大學",
+      "edu6.t": "德國語文學士", "edu6.s": "東吳大學",
+
+      "bio.title": "學術簡介",
+      "bio.p1": "陳怡君關注極端高溫與災害如何切斷高齡者的照護連續性，並發展可跨文化比較的測量工具與政策評估架構。研究場域橫跨台灣、泰國、日本、德國與英國，長期與社區組織、宗教慈善網絡及長照體系合作。",
+      "bio.p2": "她建立 CVCVI 氣候—照護能力與脆弱度指標，以及 ICE 氣候情緒量表家族，並以台灣全民健保資料庫、泰國 HART 全國高齡追蹤調查等長期資料，檢視災害後長照服務中斷與高齡者健康結果之關聯。2027 年 2 月起將任職於國立成功大學醫學院老年學研究所。",
+
+      "lang.kicker": "Languages", "lang.title": "語言與區域經驗",
+      "lang1.n": "中文（華語）", "lang1.v": "母語", "lang1.u": "台灣田野、健保資料分析、量表翻譯",
+      "lang2.n": "英文", "lang2.v": "專業", "lang2.u": "論文發表、教學、國際網絡",
+      "lang3.n": "泰文", "lang3.v": "工作可用", "lang3.u": "HART 追蹤研究、曼谷田野與教學",
+      "lang4.n": "德文", "lang4.v": "工作可用", "lang4.u": "德國長照政策轉譯",
+      "lang5.n": "日文", "lang5.v": "基礎", "lang5.u": "日本長照比較研究合作",
+
+      "ri.kicker": "Research Interests", "ri.title": "研究主題",
+      "ri.t1": "氣候—照護交會", "ri.t2": "高齡學", "ri.t3": "災害韌性",
+      "ri.t4": "長期照護政策", "ri.t5": "綜合指標", "ri.t6": "跨文化心理計量",
+      "pl.kicker": "Four Research Pillars", "pl.title": "研究四大主軸",
+      "pl1.n": "01 — 測量工具", "pl1.h": "量度脆弱度", "pl1.p": "<span class='code'>CVCVI</span>（氣候—照護能力與脆弱度指標）整合氣候脆弱度、長照充足性與社區韌性，依 OECD／JRC 綜合指標標準建構。",
+      "pl2.n": "02 — 氣候情緒", "pl2.h": "暖化世界中的心理", "pl2.p": "<span class='code'>ICE</span> 量表家族測量高齡者的氣候相關情緒與心理健康，並在中文、泰文與英文中完成驗證。",
+      "pl3.n": "03 — 長期證據", "pl3.h": "世代與追蹤", "pl3.p": "連結台灣健保資料庫的災害—長照世代（莫拉克颱風、921 地震）、368 鄉鎮、四城市亞洲概念驗證，以及泰國 HART 高齡追蹤四波資料。",
+      "pl4.n": "04 — 治理與轉譯", "pl4.h": "照護即基礎設施", "pl4.p": "社區與宗教慈善網絡（包含慈濟基金會）作為韌性基礎設施，並轉譯至德國長照改革與東協議程。",
+
+      "pub.kicker": "Selected Publications", "pub.title": "代表著作",
+      "pub.intro": "近期研究橫跨行星健康、高齡學與災害風險減緩。",
+      "stat1": "篇已發表或接受", "stat2": "篇刊於 Q1 期刊", "stat3": "篇審查或修訂中",
+
+      "te.kicker": "Teaching & Supervision", "te.title": "教學與指導",
+      "te.intro": "於泰國與台灣的公共衛生、高齡學及國際學程授課——從測量走向政策，立基於學生可直接參與的真實研究專案。",
+      "te.themesH": "課程與講題主題",
+      "te.th1": "氣候變遷、極端高溫與高齡者健康", "te.th2": "長期照護政策比較",
+      "te.th3": "社區韌性與災害應變", "te.th4": "綜合指標建構",
+      "te.th5": "跨文化量表驗證", "te.th6": "跨國高齡研究設計",
+      "te.supH": "指導招生", "te.supWhere": "2027 年 2 月起 · 國立成功大學醫學院老年學研究所",
+      "te.supP": "歡迎對氣候—照護交會、長照政策、災害韌性與心理計量工具發展有興趣的碩、博士生。可能的論文方向：",
+      "te.b1": "極端高溫暴露與長照服務中斷",
+      "te.b2": "在新語言或族群中驗證氣候情緒量表",
+      "te.b3": "特定國家的次國家層級氣候—照護脆弱度指標",
+      "te.b4": "宗教與社區組織作為災害照護基礎設施",
+      "te.b5": "氣候壓力下的長照財務比較",
+      "te.note": "有意申請者歡迎來信，並附上履歷、成績單與一份簡短的研究興趣說明。",
+
+      "aw.kicker": "Grants, Fellowships & Honours", "aw.title": "獎助與榮譽",
+      "aw1.t": "第二世紀基金（C2F）博士後獎助", "aw1.s": "朱拉隆功大學",
+      "aw2.t": "豐田基金會國際資助計畫", "aw2.s": "共同申請人；合作者 Rajib Shaw 教授（慶應義塾大學 SFC）",
+      "aw3.t": "博士論文優等獎", "aw3.s": "朱拉隆功大學公共衛生博士",
+      "aw4.t": "博士後研究訓練", "aw4.s": "哈佛 T.H. Chan 公共衛生學院，指導教授 Ichiro Kawachi",
+      "aw5.t": "海外研究經驗獎學金", "aw5.s": "朱拉隆功大學",
+      "aw6.t": "公費留學獎學金", "aw6.s": "中華民國教育部",
+
+      "sv.kicker": "Service, Editorial & Convening", "sv.title": "學術服務與影響",
+      "sv.c1h": "召集與演講",
+      "sv.c1a": "<b>創會召集人</b>，ARCH — 高齡、韌性、氣候與健康網絡",
+      "sv.c1b": "參與東協長照議程的論壇與政策對話",
+      "sv.c1c": "於氣候情緒、災害韌性與社區照護主題進行研討會發表",
+      "sv.c2h": "編輯與審查",
+      "sv.c2a": "<b>系列主編</b>，Springer Nature — <i>International Perspectives on Aging</i>",
+      "sv.c2b": "高齡學、公共衛生與災害研究期刊同儕審查委員",
+      "sv.c3h": "政策參與",
+      "sv.c3a": "將研究發現轉譯至德國長照改革辯論",
+      "sv.c3b": "參與東協區域長照政策對話",
+      "sv.c3c": "與社區及宗教慈善照護網絡合作，包含慈濟基金會",
+
+      "lab.kick": "新興研究計畫", "lab.zh": "氣候照護實驗室 · 跨越亞洲與歐洲的高齡韌性研究平台",
+      "lab.p": "一個關於氣候韌性、老化與照護連續性的研究平台，橫跨亞洲與歐洲——涵蓋政策診斷、NGO 夥伴模式與跨世代社區設計。",
+      "lab.note": "目前為形成中的研究計畫；在機構正式核准前，不以已設立之成大實驗室名義呈現。",
+
+      "nw.kicker": "What's New", "nw.title": "最新動態",
+      "nw1.d": "2026 年 9 月 2 日", "nw1.p": "<b>ISEE 2026，慕尼黑</b> — 發表「繁體中文版氣候情緒量表」於台灣的跨文化調適與心理計量驗證。", "nw1.c": "Session S24 · Bridging Knowledge, Emotion, and Culture",
+      "nw2.d": "2026", "nw2.p": "獲聘 <b>系列主編</b>，Springer Nature《International Perspectives on Aging》。",
+      "nw3.d": "2026", "nw3.p": "獲 <b>豐田基金會國際資助計畫</b>，合作者 Rajib Shaw 教授（慶應義塾大學 SFC）。",
+      "fd.kicker": "Fields & Regions", "fd.title": "研究場域",
+      "fd.r1": "台灣", "fd.r2": "泰國", "fd.r3": "日本", "fd.r4": "德國", "fd.r5": "英國", "fd.r6": "美國", "fd.r7": "東協",
+
+      "ft.h": "一起打造具氣候韌性的照護",
+      "ft.lead": "歡迎在長照政策、氣候情緒測量，以及亞洲與歐洲的全齡友善社區設計上合作。有意申請的研究生也歡迎來信。",
+      "ft.emailLabel": "電子郵件 · ",
+      "ft.c1": "© 2026 陳怡君 · I-Chun Isabelle Chen",
+      "ft.c2": "Climate Care Lab · 氣候壓力下高齡社會的研究與政策"
+    }
+  };
+
+  function apply(lang) {
+    var dict = DICT[lang] || DICT.en;
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.setAttribute("lang", lang === "zh" ? "zh-Hant" : "en");
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      var key = nodes[i].getAttribute("data-i18n");
+      if (dict[key] != null) nodes[i].innerHTML = dict[key];
+    }
+    if (dict["doc.title"]) document.title = dict["doc.title"];
+    var btn = document.getElementById("langToggle");
+    if (btn) { btn.textContent = lang === "zh" ? "EN" : "中文"; btn.setAttribute("aria-label", lang === "zh" ? "Switch to English" : "切換為中文"); }
+  }
+
+  function initial() {
+    var saved = null;
+    try { saved = localStorage.getItem("icc-lang"); } catch (e) {}
+    if (saved === "en" || saved === "zh") return saved;
+    return "en";
+  }
+
+  var lang = initial();
+  apply(lang);
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest("#langToggle") : null;
+    if (!btn) return;
+    lang = lang === "zh" ? "en" : "zh";
+    apply(lang);
+    try { localStorage.setItem("icc-lang", lang); } catch (e2) {}
+  });
+})();
