@@ -23,7 +23,7 @@
       "hero.role1": "Postdoctoral Fellow · <b>Chulalongkorn University</b>",
       "hero.role2": "Incoming Assistant Professor · <b>NCKU</b>",
       "hero.role3": "Visiting Fellow · <b>University of West London</b>",
-      "hero.role4": "Founding Convener · <b>ARCH Network</b>",
+      "hero.role4": "Founding Convener · <b>Inter-CARE</b>",
       "link.email": "Email",
 
       "about.kicker": "關於我", "about.title": "About",
@@ -92,7 +92,7 @@
 
       "sv.kicker": "學術服務與影響", "sv.title": "Service, Editorial & Convening",
       "sv.c1h": "Convening & talks",
-      "sv.c1a": "<b>Founding Convener</b>, ARCH — Ageing, Resilience, Climate & Health Network",
+      "sv.c1a": "<b>Founding Convener</b>, <a href=\"https://sites.google.com/view/inter-care--network/home\" target=\"_blank\" rel=\"noopener\">Inter-CARE</a> — International Network on Climate, Ageing and Resilience Research",
       "sv.c1b": "Symposium and policy-dialogue participation across ASEAN long-term-care agendas",
       "sv.c1c": "Conference presentations on climate emotions, disaster resilience and community care",
       "sv.c2h": "Editorial & peer review",
@@ -103,9 +103,9 @@
       "sv.c3b": "Contributions to ASEAN regional long-term-care policy dialogue",
       "sv.c3c": "Collaboration with community and faith-based care networks, including the Tzu Chi Foundation",
 
-      "lab.kick": "An emerging research initiative", "lab.zh": "A research platform for ageing resilience across Asia and Europe",
+      "lab.kick": "An independent research unit", "lab.zh": "A research platform for ageing resilience across Asia and Europe",
       "lab.p": "A research platform for climate resilience, ageing and continuity of care across Asia and Europe — spanning policy diagnostics, NGO partnership models, and intergenerational community design.",
-      "lab.note": "Currently a research programme in formation; not presented as an officially established NCKU laboratory before institutional approval.",
+      "lab.note": "Founded and directed by I-Chun Chen as an independent research unit, working with partners across Asia and Europe.",
 
       "nw.kicker": "最新動態", "nw.title": "What's New",
       "nw1.d": "2 Sep 2026", "nw1.p": "<b>ISEE 2026, Munich</b> — Talk on the cross-cultural adaptation and psychometric validation of the Traditional Chinese Inventory of Climate Emotions in Taiwan.", "nw1.c": "Session S24 · Bridging Knowledge, Emotion, and Culture",
@@ -137,7 +137,7 @@
       "hero.role1": "博士後研究員 · <b>朱拉隆功大學</b>",
       "hero.role2": "候任助理教授 · <b>成功大學</b>",
       "hero.role3": "訪問研究員 · <b>西倫敦大學</b>",
-      "hero.role4": "創會召集人 · <b>ARCH 網絡</b>",
+      "hero.role4": "創會召集人 · <b>Inter-CARE</b>",
       "link.email": "電子郵件",
 
       "about.kicker": "About", "about.title": "關於",
@@ -206,7 +206,7 @@
 
       "sv.kicker": "Service, Editorial & Convening", "sv.title": "學術服務與影響",
       "sv.c1h": "召集與演講",
-      "sv.c1a": "<b>創會召集人</b>，ARCH — 高齡、韌性、氣候與健康網絡",
+      "sv.c1a": "<b>創會召集人</b>，<a href=\"https://sites.google.com/view/inter-care--network/home\" target=\"_blank\" rel=\"noopener\">Inter-CARE</a> — 氣候、高齡與韌性研究國際網絡",
       "sv.c1b": "參與東協長照議程的論壇與政策對話",
       "sv.c1c": "於氣候情緒、災害韌性與社區照護主題進行研討會發表",
       "sv.c2h": "編輯與審查",
@@ -217,9 +217,9 @@
       "sv.c3b": "參與東協區域長照政策對話",
       "sv.c3c": "與社區及宗教慈善照護網絡合作，包含慈濟基金會",
 
-      "lab.kick": "新興研究計畫", "lab.zh": "氣候照護實驗室 · 跨越亞洲與歐洲的高齡韌性研究平台",
+      "lab.kick": "獨立研究單位", "lab.zh": "氣候照護實驗室 · 跨越亞洲與歐洲的高齡韌性研究平台",
       "lab.p": "一個關於氣候韌性、老化與照護連續性的研究平台，橫跨亞洲與歐洲——涵蓋政策診斷、NGO 夥伴模式與跨世代社區設計。",
-      "lab.note": "目前為形成中的研究計畫；在機構正式核准前，不以已設立之成大實驗室名義呈現。",
+      "lab.note": "由陳怡君創立並主持的獨立研究單位，與亞洲及歐洲夥伴合作。",
 
       "nw.kicker": "What's New", "nw.title": "最新動態",
       "nw1.d": "2026 年 9 月 2 日", "nw1.p": "<b>ISEE 2026，慕尼黑</b> — 發表「繁體中文版氣候情緒量表」於台灣的跨文化調適與心理計量驗證。", "nw1.c": "Session S24 · Bridging Knowledge, Emotion, and Culture",
