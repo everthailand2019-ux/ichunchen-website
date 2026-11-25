@@ -148,6 +148,8 @@ html[data-lang="en"] .sec-kicker { display: none; } /* English interface: no sec
 .pub .meta em { color: var(--pine); font-style: normal; font-weight: 500; }
 .pub .doi { display: inline-flex; align-items: center; gap: 2px; color: var(--gold-ink); font-weight: 600; font-size: 12.5px; letter-spacing: 0.03em; text-decoration: none; border: 1px solid var(--gold); border-radius: 999px; padding: 1px 9px; margin-left: 4px; white-space: nowrap; transition: background .15s, color .15s; }
 .pub .doi:hover { background: var(--gold); color: #fff; }
+#talks .pub, .pub-list.wide .pub { grid-template-columns: 1fr 1fr; }
+#talks .pub .meta, .pub-list.wide .pub .meta { white-space: normal; }
 .pub-group-title { font-family: var(--han); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold-ink); margin: 36px 0 10px; padding-bottom: 8px; border-bottom: 1.5px solid var(--line); }
 .pub-group-title:first-of-type { margin-top: 0; }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
@@ -234,7 +236,7 @@ footer .colophon { margin-top: 40px; padding-top: 22px; border-top: 1px solid va
   .rgrid, .pillars, .svc, .blog-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr; }
   .pub { grid-template-columns: 1fr; gap: 4px; }
-  .pub .meta { white-space: normal; }
+  .pub .meta { white-space: normal; text-align: left; }
   footer .ft-grid { grid-template-columns: 1fr; }
   section { padding: 46px 0; }
   .rcol + .rcol { margin-top: 26px; }
