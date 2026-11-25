@@ -173,6 +173,7 @@ html[data-lang="en"] .sec-kicker { display: none; } /* English interface: no sec
 .lab { position: relative; overflow: hidden; background: linear-gradient(170deg, var(--panel), var(--surface) 72%); border: 1px solid var(--line); border-radius: 20px; padding: clamp(30px, 5vw, 52px); }
 .lab .iso2 { position: absolute; right: -30px; top: -26px; width: 460px; height: 250px; pointer-events: none; opacity: .55; }
 .lab > *:not(.iso2) { position: relative; }
+.lab-logo { display: block; width: 72px; height: auto; margin: 0 0 18px; }
 .lab .kick { color: var(--gold-ink); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 .lab h3 { font-family: var(--display); font-weight: 600; font-size: clamp(1.8rem, 4.5vw, 2.5rem); margin: 14px 0 6px; color: var(--pine); line-height: 1.12; }
 .lab .zh { font-family: var(--han); color: var(--muted); font-size: 1rem; letter-spacing: 0.06em; }

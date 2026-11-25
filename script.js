@@ -34,7 +34,7 @@
       "appt.curOrg": "College of Population Studies", "appt.curPlace": "Chulalongkorn University · Bangkok, Thailand",
       "appt.incPill": "Incoming · Feb 2027", "appt.incTitle": "Assistant Professor",
       "appt.incOrg": "Institute of Gerontology, College of Medicine", "appt.incPlace": "National Cheng Kung University · Tainan, Taiwan",
-      "about.also": "Also <b>Visiting Fellow</b> at the Geller Institute of Ageing and Memory, University of West London (2025–); <b>Adjunct Assistant Professor</b> at the University of the Thai Chamber of Commerce (2024–) and Ming Chuan University (2024–). Fieldwork across Japan, Taiwan and Thailand, with policy translation for Germany and ASEAN.",
+      "about.also": "Also <b>Visiting Researcher</b> at the Chair of Social Structure and Sociology of Ageing Societies, TU Dortmund University; <b>Visiting Fellow</b> at the Geller Institute of Ageing and Memory, University of West London (2025–); <b>Adjunct Assistant Professor</b> at the University of the Thai Chamber of Commerce (2024–) and Ming Chuan University (2024–); and <b>Member</b> of the German Society for Gerontology and Geriatrics (DGGG). Fieldwork across Japan, Taiwan and Thailand, with policy translation for Germany and ASEAN.",
 
       "edu1.t": "Postdoctoral research training", "edu1.s": "Harvard T.H. Chan School of Public Health — with Prof. Ichiro Kawachi",
       "edu2.t": "PhD, Public Health", "edu2.s": "Chulalongkorn University · <span class='prize'>Very Good Dissertation Prize</span>",
@@ -148,7 +148,7 @@
       "appt.curOrg": "人口研究學院", "appt.curPlace": "朱拉隆功大學 · 泰國曼谷",
       "appt.incPill": "候任 · 2027 年 2 月", "appt.incTitle": "助理教授",
       "appt.incOrg": "醫學院老年學研究所", "appt.incPlace": "國立成功大學 · 台灣台南",
-      "about.also": "同時擔任西倫敦大學 Geller 老化與記憶研究所 <b>訪問研究員</b>（2025–）；泰國商會大學（2024–）與銘傳大學（2024–）<b>兼任助理教授</b>。研究場域橫跨日本、台灣與泰國，並為德國與東協進行政策轉譯。",
+      "about.also": "同時擔任德國多特蒙德工業大學（TU Dortmund）高齡社會之社會結構與社會學講座 <b>訪問研究員</b>；西倫敦大學 Geller 老化與記憶研究所 <b>訪問研究員</b>（2025–）；泰國商會大學（2024–）與銘傳大學（2024–）<b>兼任助理教授</b>；並為德國高齡與老年醫學學會（DGGG）<b>會員</b>。研究場域橫跨日本、台灣與泰國，並為德國與東協進行政策轉譯。",
 
       "edu1.t": "博士後研究訓練", "edu1.s": "哈佛大學 T.H. Chan 公共衛生學院 — 指導教授 Ichiro Kawachi",
       "edu2.t": "公共衛生博士", "edu2.s": "朱拉隆功大學 · <span class='prize'>博士論文優等獎</span>",
